@@ -1,4 +1,4 @@
-﻿<Window x:Class="Voting_Bot.MainWindow"
+<Window x:Class="Voting_Bot.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,6 +13,7 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="20">
             <TextBlock Text="Voting bot" FontStyle="Italic" FontWeight="Bold" FontSize="34" HorizontalAlignment="Center"/>
+            <TextBlock Text="(This uses FireFox)" FontStyle="Italic" FontSize="15" HorizontalAlignment="Center"/>
             <TextBox x:Name="InputBox" Text="Type URL here" Width="500" Height="30" />
             <TextBox x:Name="XPath_Code" Text="Type Option xPath here" HorizontalAlignment="Center" Width="500" Height="30" />
             <TextBox x:Name="Button_XPath" Text="Type Submit xPath here" HorizontalAlignment="Center" Width="500" Height="30" />
