@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,7 +49,9 @@ namespace Voting_Bot
                 Submit = Button_XPath.Text;
             });
 
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new FirefoxDriver();
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            Thread.Sleep(1000);
 
             driver.Manage().Window.Maximize();
 
